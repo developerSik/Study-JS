@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 선택자를 이용한 선택</title>
+</head>
+<body>
+    <h1>CSS 선택자를 이용한 선택</h1>
+    <p>첫 번째 단락이에요!</p>
+    <ul>
+        <li class="odd">치킨</li>
+        <li class="even">피자</li>
+        <li class="odd">초밥</li>
+        <li class="even">카레</li>
+        <li class="odd">제육덮밥</li>
+    </ul>
+</body>
+<script>
+    const p = document.querySelector("p");
+    const oddList = document.querySelectorAll(".odd");
+    const evenList = document.querySelectorAll("li.even");
+    const lists = document.getElementsByTagName("li");
+
+    p.innerHTML = "수정된 단락이에요!";
+
+    // oddList.forEach(odd => odd.style.color = "purple");
+    // evenList.forEach(even => even.style.color = "red");
+
+    HTMLCollection.prototype.forEach = Array.prototype.forEach;
+    lists.forEach(li => li.style.color = li.className == 'odd' ? "purple" : "red");
+    lists.forEach(li => li.style.color = li.getAttribute("class") == 'odd' ? "purple" : "red"); 
+    
+    
+</script>
+</html>

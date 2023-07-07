@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요금표</title>
+    <link rel="stylesheet" href="task01.css">
+</head>
+<body>
+    <table border="1">
+        <caption>
+            요금표
+        </caption>
+		<tr>
+			<th class="title">구분</th>
+			<th class="title">요금</th>
+		</tr>
+		<tr class="line">
+			<td>아동</td>
+			<td>무료</td>
+		</tr>
+		<tr class="line">
+			<td>청소년</td>
+			<td>2000원</td>
+		</tr>
+		<tr class="line">
+			<td>성인</td>
+			<td>5000원</td>
+		</tr>
+	</table>
+    <form>
+        <fieldset>
+            <legend>구분</legend>
+            <div class="wrap">             
+                    <input type="text" name="id">
+                    <input type="button" value="확인" onclick="send()">
+             </div>
+        </fieldset>
+    </form>
+</body>
+<script>
+
+    const lines = document.getElementsByClassName("line")
+    
+    function send() {
+        const id = document.getElementsByName("id")[0].value;
+        for(let i=0; i<lines.length; i++){
+            let data = lines[i].children[0];
+            data.parentElement.style.background = "white";
+            data[i].innerHTML = child[i].innerHTML.replace("★");
+            
+        }
+        for(let i=0; i<lines.length; i++){
+            let data = lines[i].children[0];
+            if(id == data.innerHTML){
+                data.parentElement.style.background = "#ef5350";
+                data.innerHTML = "★" + data.innerHTML;
+            
+            
+            }
+            
+          
+       
+        }
+    }
+    
+</script>
+</html>

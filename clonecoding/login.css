@@ -1,0 +1,51 @@
+div.css-10c4py {
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+div.css-5e98i0 {
+    margin-top: unset;
+    margin-bottom: unset;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+div.css-alqc3y {
+    max-width: 480px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(12, 12, 12);
+    border-color: rgb(25, 25, 25);
+}
+
+div.css-egw0i5 {
+    display: flex;
+    min-height: 392px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    justify-content: space-between;
+}
+
+div.css-ykvgqz {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+}
+
+div.css-1gpclxn {
+    border-width: 0px;
+    color: rgb(243, 243, 243);
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+}

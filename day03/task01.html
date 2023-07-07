@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>task01</title>
+</head>
+<style>
+    p{
+        width: 500px;
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <h3>마우스를 올려보세요.</h3>
+    <hr>
+    <p onmouseover="changecolor('over', this)" onmouseout="changecolor('out',this)">여기에 마우스를 올리면 배경색이 노란색으로 변합니다</p>
+</body> 
+<script>
+    function changecolor(event){
+       event == 'over' ? document.body.style.backgroundColor = 'yellow' : document.body.style.backgroundColor = 'white';
+    }
+</script>
+</html>

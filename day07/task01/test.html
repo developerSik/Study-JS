@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요금표</title>
+    <link rel="stylesheet" href="task01.css">
+</head>
+<body>
+    <table border="1">
+		<tr>
+			<th class="title">구분</th>
+			<th class="title">요금</th>
+		</tr>
+		<tr class="line">
+			<td class="data">아동</td>
+			<td>무료</td>
+		</tr>
+		<tr class="line">
+			<td class="data">청소년</td>
+			<td>2000원</td>
+		</tr>
+		<tr class="line">
+			<td class="data">성인</td>
+			<td>5000원</td>
+		</tr>
+	</table>
+    <form>
+        <fieldset>
+            <legend>구분</legend>
+            <div class="wrap">             
+                    <input type="text" name="id">
+                    <input type="button" value="확인" onclick="send()">
+             </div>
+        </fieldset>
+    </form>
+</body>
+<script>
+const arPeople = ['아동', '청소년', '성인'];
+const arTr = document.getElementsByClassName('line');
+const arTd = document.getElementsByClassName("data");
+let flag = false;
+// let data = new Array();
+//     for(let i=0; i<line.length; i++){
+//         data = line[i].children[0];
+//     }
+function send() {
+  /* 이전 변경 사항 초기화 */
+  flag = false;
+  for (let i = 0; i < arTr.length; i++) {
+    arTr[i].style.backgroundColor = 'white';
+    arTd[i].innerHTML = arPeople[i];
+  }
+
+  /*people에  입력 값 넣기*/
+  const id = document.getElementsByName('id')[0].value;
+
+  for (let i = 0; i < arTr.length; i++) {
+    if (id == arPeople[i]) {
+      //만약 입력값이 arPeople중의 값과 같은게 있다면
+      //arPeople의 인덱스 값을 가져와서 해당하는 Tr태그와 Td태그 변경
+      arTr[i].style.backgroundColor = 'red';
+      arTd[i].innerHTML = '★' + arPeople[i];
+      flag = true; //한번이라도 if문 안에 들어왔다면 flag를 true로 변경
+    }
+  }
+  if (!flag) {
+    // flag가 false라면 입력값이 잘못입력된 값이기 때문에
+    alert('다시 입력해주세요'); //경고창 출력
+  }
+}
+</script>
+</html>

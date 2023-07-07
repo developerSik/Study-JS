@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Metro Sans';
+    src: url(metro-sans-regular.otf);
+}
+body{
+    font-family: 'Metro Sans',sans-serif;
+    min-width: 1000px;
+}
+
+div.background {
+    width: 1000px;
+    height: 480px;
+    background-color: #9F70FB;
+}
+section.container {
+    padding-top: 50px;
+    width: 540px;
+    height: 380px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+div.banner {
+    width: 3780px;
+    height: 380px;
+    transform: translate(-540px);
+}
+
+div.banner div {
+    width: 540px;
+    height: 380px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+div.arrow {
+    position: absolute;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    color: #303441;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 0 1px transparent, 0 0 0 4px transparent, 0 2px 4px rgba(0 0 0 / 18%);
+}
+
+div.prev {
+    left: 220px;
+    bottom: 410px;
+    opacity: 0.5;
+}
+
+div.prev:hover {
+    opacity: 1;
+}
+
+div.next {
+    right: 485px;
+    bottom: 410px;
+    opacity: 0.5;
+}
+
+div.next:hover{
+    opacity: 1;
+}
+
+div.numberbox {
+    position: absolute;
+    width: 67px;
+    height: 27px;
+    color: #ffffff;
+    font-size: 13px;
+    grid-gap: 4px;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,0.4);
+    top: 390px;
+    left: 680px;
+    text-align: center;
+}
+
+div.numbering {
+    padding-top: 5px;
+}
+
+div.prevlt {
+    font-size: 15px;
+    padding-top: 8px;
+}
+
+div.nextlt {
+    font-size: 15px;
+    padding-top: 8px;
+}
+
+span {
+    font-size: 15px;
+}
+span.one {
+    color: #ffffff;
+}
+span.two {
+    text-align: center;
+    opacity: 0.5;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task04</title>
+</head>
+<body></body>
+<script>
+    let message = prompt("출력할 문자를 입력하세요.");
+    let number = prompt("몇번을 출력하시겠습니까?");
+    
+   
+    let num = Number(number);
+   
+    input(message, num, function(count){
+        document.write(`<span>결과 : </span>`);
+     for(let i=0; i<count; i++){
+         document.write(`<span>${message}</span>`);
+     }
+    });
+
+    function input (message, num, callback){
+     document.write(`<h3>pr("${message}",${number});</h3>`);
+     if(callback){
+        callback(num);
+     }
+   
+ }
+
+
+       
+
+      
+     
+
+  
+</script>
+</html>

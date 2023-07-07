@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://image9.coupangcdn.com/image/coupang/favicon/v2/favicon.ico">
+    <link rel="stylesheet" href="clonecoding-login.css">
+    <title>쿠팡 로그인</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="member-header">
+            <h1 class="member-logo">
+                <a href="https://www.coupang.com/" class="member-logo__link" style="background-image:url(//static.coupangcdn.com/image/static/login/logo-coupang.x2.20201201.png),none;">
+                    <img src="https://static.coupangcdn.com/image/static/login/logo-coupang.x2.20201201.png" width="100%" height="100%" class="member-logo__img-fixer" alt="coupang">
+                </a>
+            </h1>
+        </header>
+        <div class="member-main">
+            <div>
+                <div></div>
+                <form method="post" action="/login/loginRetry.pang">
+                    <div>
+                        <div class="member__field-wrap">
+                            <div class="member__input-field">
+                                <label class="member__input-wrapmember__input-wrap-v2" for="login-email-input">
+                                    <span class="member__input-groupmember__input-group--icon-label">
+                                        <i class="member__spritemember__sprite--email"></i>
+                                    </span>
+                                    <span class="member__input-group">
+                                        <input type="email" class="member__input_loginIdInputui-autocomplete-input" maxlength="80" name="email" id="login-email-input" value placeholder="아이디(이메일)" autocomplete="off">
+                                    </span>
+                                </label>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="member__field-wrap">
+                            <div class="member__input-fieldmember__input-field--util">
+                                <label class="member__input-wrapmember__input-wrap-v2" for="login-password-input">
+                                    <span class="member__input-groupmember__input-group--icon-label">
+                                        <i class="member__spritemember__sprite--password"></i>
+                                    </span>
+                                    <span class="member__input-group">
+                                        <input type="password" class="member__input_loginPasswordInput" value name="password" id="login-password-input" placeholder="비밀번호">
+                                    </span>
+                                </label>
+                                <span class="member__input-groupmember__input-group--util">
+                                    <button class="member__util-trigger_loginPasswordShowTrigger">
+                                        <i class="member__spritemember__sprite--show-password_loginPasswordIconOpenedEye" title="문자 보이기"></i>
+                                        <i class="member__spritemember__sprite--hide-password_loginPasswordIconClosedEye" title="문자 숨기기" style="display: none;"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- <div class="login__textlogin__text--captcha-guide">회원님의 정보 보호를 위해 자동입력 방지문자를 함께 입력해주세요.</div> -->
+                    </div>
+                    <div class="login__contentlogin__content--util">
+                        <label for="login-keep-state" class="member__checkboxlogin__util__keep-login">
+                            <input type="checkbox" class="member__checkbox__inputmember__sprite-aftermember__sprite-after--checkbox_loginRememberInput">
+                            <span class="member__checkbox__label">로그인 상태 유지</span>
+                        </label>
+                        <a href="https://login.coupang.com/login/accountInfoFind.pang" class="login__linklogin__link--find-id-password_loginFindIdPwLink"> 아이디(이메일)/비밀번호 찾기 
+                            <i class="member__spritemember__sprite--right-arrow"></i>
+                        </a>
+
+                        <div></div>
+                    </div>
+                    <div class="login__contentlogin__content--trigger">
+                        <button class="login__buttonlogin__button--submit_loginSubmitButton"> 로그인 </button>
+                        <hr class="login__separator">
+                        <a href="https://login.coupang.com/login/memberJoinFrm.pang?rtnUrl=https%3A%2F%2Fwww.coupang.com%2Fnp%2Fpost%2Flogin%3Fr%3Dhttps%253A%252F%252Fwww.coupang.com%252F" class="login__buttonlogin__button--join_loginJoinLink">회원가입</a>
+                    </div>
+                    <div></div>
+                </form>
+            </div>
+        </div>
+        <footer class="member-footer">
+            <div> ©Coupang Corp. All rights reserved. </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

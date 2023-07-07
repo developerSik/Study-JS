@@ -1,0 +1,19 @@
+table {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title {
+    background-color: beige;
+}
+
+legend {
+    text-align: center;
+}
+
+fieldset {
+    text-align: center; 
+    width: 60%; 
+    margin: 0 auto;
+}

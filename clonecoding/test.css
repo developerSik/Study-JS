@@ -1,0 +1,163 @@
+body {
+    font-family: dotum,sans-serif;
+}
+
+label {
+    cursor: pointer;
+}
+
+div.member-wrap {
+    min-width: 290px;
+    max-width: 460px;
+    padding: 0 4.35%;
+    width: auto;
+    margin: 0 auto;
+}
+
+.member-header {
+    position: relative;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h1.member-logo {
+    margin: 0 auto;
+    padding: 10.27% 0 0;
+    text-align: center;
+}
+
+a.member-logo__link {
+    position: relative;
+    display: block;
+    width: 43.83%;
+    max-width: 195px;
+    max-height: 46px;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    padding-top: 10%;
+    background-size: cover;
+}
+
+img.member-logo__img-fixer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    *width: auto;
+    height: 100%;
+    *height: auto;
+    border: 0;
+    opacity: 0;
+}
+
+div.member-main {
+    position: relative;
+}
+
+div.section-title {
+    padding: 20px 0 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #111;
+}
+
+div.join_content {
+    margin-bottom: 20px;
+}
+
+div.member__field-wrap {
+    margin: 2.9% 0 0;
+}
+
+div.member__input-field {
+    position: relative;
+}
+
+label.member__input-wrap-v2 {
+    display: block;
+    position: relative;
+    height: 48px;
+    padding: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: border-color .25s ease;
+}
+
+span.member__input-group--icon-label {
+    position: relative;
+    float: left;
+    display: inline;
+    min-width: 44px;
+    _width: 44px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    background-color: #fafafa;
+}
+
+i.join__sprite {
+    overflow: hidden;
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    color: transparent;
+    text-indent: 1px;
+    font-size: 1px;
+    line-height: 1px;
+    background-image: url(//img1a.coupangcdn.com/image/static/login/sprite-join.x1.20160902.png);
+    background-image: url(//img1a.coupangcdn.com/image/static/login/sprite-join.20160902.svg),none;
+    background-size: 86px 86px;
+}
+
+i.join__sprite--email {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 16px;
+    margin: -8px 0 0 -10px;
+    padding-left: 19px;
+    background-position: -1px -1px;
+}
+
+span.member__input-group {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+}
+
+input.member__input {
+    width: 100%;
+    padding: 16px 0 12px;
+    border: 0 none;
+    background: none transparent;
+    font-family: dotum,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #111;
+    font-weight: 700;
+    text-indent: 12px;
+    
+}
+
+span.member__input-area__overlap-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #aaa;
+    padding: 16px 0 12px;
+    border: 0 none;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-indent: 12px;
+    
+    
+}
+
+ul.terms 

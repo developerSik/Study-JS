@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="task02.css">
+<body>
+        <fieldset class="wrap">
+            <legend><strong>숫자를 한글로 변경</strong></legend>
+            <strong><p id="result">결과 표시 부분</p></strong>
+            <input type="text" name="target">
+            <hr>
+        <input type="button" value="변경" class="button" onclick="send()">
+        </fieldset>
+       
+        
+</body>
+<script>
+    let hangle = "영일이삼사오육칠팔구점";
+    let DOT = 10;
+    function send(){
+        let result = "";
+        const ptag = document.getElementById("result");
+        let input = document.getElementsByName("target")[0].value.split("");
+        for(let i=0; i<input.length; i++){
+            if(input[i] == '.'){
+                input[i] = DOT;
+            } 
+            if(hangle[input[i]] == undefined){
+                result = "숫자만 입력해주세요."
+                break;
+            }
+            result += hangle[input[i]];
+        }
+        ptag.innerHTML = result;
+
+
+    }
+
+</script>
+</html>
